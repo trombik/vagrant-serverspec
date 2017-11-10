@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+require "pathname"
+require "filetuils"
+
+root = Pathname.new(File.dirname(__FILE__)).parent
+template_file = root + "spec_helper.rb.example"
+dest_dir = ARGV[0] ? ARGV[0] : root + "spec" + "serverspec"
+
+FileUtils.mkdir_p dest_dir
+FileUtils.cp template_file, dest_dir
+
+# vim: ft=ruby

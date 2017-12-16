@@ -10,8 +10,8 @@ PATH
   remote: .
   specs:
     vagrant-serverspec (0.1.0)
-      net-ssh (~> 3.0.2)
-      serverspec (~> 2.40.0)
+      net-ssh (>= 3.0.2)
+      serverspec (>= 2.40.0)
       vagrant-ssh-config
 
 GEM
@@ -55,11 +55,11 @@ GEM
       ruby-progressbar (~> 1.7)
       unicode-display_width (~> 1.0, >= 1.0.1)
     ruby-progressbar (1.9.0)
-    serverspec (2.40.0)
+    serverspec (2.41.3)
       multi_json
       rspec (~> 3.0)
       rspec-its
-      specinfra (~> 2.68)
+      specinfra (~> 2.72)
     sfl (2.3)
     specinfra (2.72.1)
       net-scp
@@ -72,10 +72,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.16)
-  rake (~> 10.0)
-  rspec (~> 3.0)
-  rubocop (~> 0.51.0)
+  bundler (>= 1.16)
+  rake (>= 10.0)
+  rspec (>= 3.0)
+  rubocop (>= 0.51.0)
   vagrant-serverspec!
   vagrant-ssh-config!
 

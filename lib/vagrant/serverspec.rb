@@ -17,7 +17,7 @@ module Vagrant
     #
     def run(group:, hostname:)
       sudo_password = ENV["SUDO_PASSWORD"]
-      Bundler.with_clean_env do
+      Bundler.with_unbundled_env do
         configure_env(
           "TARGET_HOST" => hostname,
           "SUDO_PASSWORD" => sudo_password
